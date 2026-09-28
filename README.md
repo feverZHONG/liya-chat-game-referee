@@ -78,6 +78,7 @@ python3 scripts/gomoku_bench.py verify     # 动过 AI 再跑：VCF 穷举复核
 - [liya-persona-authoring](https://github.com/feverZHONG/liya-persona-authoring) —— 人格 / 身份文件的写法
 - [liya-sillytavern-cards](https://github.com/feverZHONG/liya-sillytavern-cards) —— 酒馆角色卡写法与工具
 - [liya-sillytavern-worldbook](https://github.com/feverZHONG/liya-sillytavern-worldbook) —— 酒馆世界书（Lorebook）：触发链源码实证 + 触发体检 / 模拟 / 生成工具
+- [liya-delegation-and-verification](https://github.com/feverZHONG/liya-delegation-and-verification) —— 委派与验收：给子代理写任务书、并行隔离、把「自报」验成事实
 
 ## 提思路 / 提修正
 
