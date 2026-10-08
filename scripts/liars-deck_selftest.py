@@ -71,7 +71,7 @@ def main():
     d = tempfile.mkdtemp(prefix="ldk-selftest-")
     st = os.path.join(d, "ldk.json")
     try:
-        # ── 维护闸（2026-09-15 阁下令）──
+        # ── 维护闸（2026-09-15 令）──
         rc, out = run(st, "new", bypass=False)
         check("维护闸：推进命令被挡", rc != 0 and "维护中" in out, out.strip())
         rc2, out2 = run(st, "show", bypass=False)

@@ -16,6 +16,8 @@
       add / show / games / json
   spy                        谁是卧底 · 身份分配 → ../spy-game/scripts/spy.py
   turtle                     海龟汤 · 对局档案   → ../sea-turtle-soup/scripts/turtle.py
+  turtle-g                   海龟汤 · 群局（本天使出题＋裁判）→ ../sea-turtle-soup/scripts/turtle-g.py
+      add / check / list / show / open / hint / log / solve / state / close / board / index
   list                       列子命令
 
 例子：
@@ -26,6 +28,8 @@
   game duel roll
   game spy --list "1【甲】2【乙】3【丙】"
   game turtle new "手指所向"
+  game turtle-g add "题名" --soup "…" --answer "…" --hint "…"
+  game turtle-g open
 
 数据根：状态落 <根>/temp/、归档落 <根>/workspace/records/，由引擎自己按
 $GAME_HOME ＞ 往上找带 temp/ 或 workspace/ 的一层 ＞ 脚本上一级 解析。
@@ -60,6 +64,7 @@ SUBS = {
 SIBLINGS = {
     "spy": ("spy-game", "scripts/spy.py"),
     "turtle": ("sea-turtle-soup", "scripts/turtle.py"),
+    "turtle-g": ("sea-turtle-soup", "scripts/turtle-g.py"),
 }
 
 ALIAS_OF = {"mine": "minesweeper", "dice": "liars-dice", "deck": "liars-deck", "duel": "dice-duel"}
